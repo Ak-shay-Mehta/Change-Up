@@ -434,9 +434,7 @@ void Robot::userControl() {
     Inertial.calibrate();
     odometryInit();
     odometryCalculationLoop();
-    wait(3000);
-    runSkills(); // Run the Skills Program
-    wait(5000);                               
+    wait(3000);                             
   }
   if (Controller.ButtonX.pressing()) {
     odometryCalculationLoop();
